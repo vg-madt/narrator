@@ -1,0 +1,50 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relative">
+
+    <Button
+        android:id="@+id/previous"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="760dp"
+        android:background="@drawable/button"
+        android:text="Previous"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="380dp"
+        android:layout_marginTop="760dp"
+        android:background="@drawable/button"
+        android:text="Next"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/pagenumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="460dp"
+        android:layout_marginTop="28dp"
+        android:text="TextView"
+        android:textSize="24sp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" />
+
+
+</RelativeLayout>

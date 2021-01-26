@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".navigationscreens.Edit">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btntext"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="320dp"
+        android:background="@drawable/button"
+        android:text="Text Story"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        />
+
+    <Button
+        android:id="@+id/btncomics"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="400dp"
+        android:text="Comic Story"
+        android:background="@drawable/button"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        />
+
+
+    <Button
+        android:id="@+id/btndraft"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="480dp"
+        android:background="@drawable/button"
+        android:text="Drafts"
+        android:textColor="@android:color/white"
+        android:textSize="20dp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        app:itemBackground="@color/colorPrimary"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu_navigation"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

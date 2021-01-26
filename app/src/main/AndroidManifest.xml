@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.narrator">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".comicreader.ShowComicScene"></activity>
+        <activity android:name=".comicreader.ShowComicChapter"/>
+        <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+
+        <activity
+            android:name=".textreader.ShowTextPage"
+            android:parentActivityName=".textreader.ShowTextChapter" />
+        <activity
+            android:name=".textreader.ShowTextChapter"
+            android:parentActivityName=".navigationscreens.Home" />
+        <activity android:name=".navigationscreens.Login" />
+        <activity android:name=".navigationscreens.Register" />
+        <activity android:name=".Drafts" />
+        <activity
+            android:name=".comicacctivity.AddNewScene"
+            android:parentActivityName=".comicacctivity.AddNewChapter" />
+        <activity
+            android:name=".comicacctivity.AddNewChapter"
+            android:parentActivityName=".comicacctivity.AddNewBook" />
+        <activity
+            android:name=".comicacctivity.AddNewBook"
+            android:parentActivityName=".navigationscreens.Edit" />
+        <activity android:name=".navigationscreens.Library" />
+        <activity android:name=".navigationscreens.Notifications" />
+        <activity android:name=".navigationscreens.Settings" />
+        <activity android:name=".navigationscreens.Home" />
+        <activity
+            android:name=".textactivity.AddNewTextBook"
+            android:parentActivityName=".navigationscreens.Edit" />
+        <activity
+            android:name=".textactivity.AddNewTextChapter"
+            android:parentActivityName=".textactivity.AddNewTextBook" />
+        <activity
+            android:name=".textactivity.AddNewTextPage"
+            android:parentActivityName=".textactivity.AddNewTextChapter" />
+        <activity
+            android:name=".textactivity.PageEdit"
+            android:parentActivityName=".textactivity.AddNewTextPage" />
+        <activity android:name=".navigationscreens.Edit" />
+        <activity
+            android:name=".comicacctivity.ComicCreator"
+            android:parentActivityName=".comicacctivity.AddNewScene" />
+        <activity
+            android:name=".comicacctivity.CharacterGridView"
+            android:parentActivityName=".comicacctivity.ComicCreator" />
+        <activity android:name=".Splash_Screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

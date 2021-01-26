@@ -1,0 +1,82 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relative">
+
+    <Button
+        android:id="@+id/close"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="540dp"
+        android:background="@drawable/image_round"
+        android:contentDescription="avatar"
+        android:text="X" />
+
+    <Button
+        android:id="@+id/avatar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="750dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/image_round"
+        android:contentDescription="avatar"
+        android:foreground="@drawable/person" />
+
+    <Button
+        android:id="@+id/dialog"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="750dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/image_round"
+        android:foreground="@drawable/dialog"
+        android:contentDescription="avatar"
+        />
+    <Button
+        android:id="@+id/bubble"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="750dp"
+        android:layout_marginLeft="250dp"
+        android:background="@drawable/image_round"
+        android:foreground="@drawable/bubble"
+        android:contentDescription="avatar"
+        />
+    <Button
+        android:id="@+id/text"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="750dp"
+        android:layout_marginLeft="370dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/image_round"
+        android:foreground="@drawable/ic_text_fields_black_24dp"
+        android:contentDescription="avatar"
+        />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="750dp"
+        android:layout_marginLeft="490dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/image_round"
+        android:foreground="@drawable/ic_save"
+        android:contentDescription="avatar"
+        />
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" />
+
+
+</RelativeLayout>

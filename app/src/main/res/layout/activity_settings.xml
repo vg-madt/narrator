@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".navigationscreens.Settings">
+
+    /
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:textSize="30sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        app:itemBackground="@color/colorPrimary"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu_navigation"
+        android:layout_alignParentBottom="true"/>
+
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="207dp"
+        android:layout_height="205dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="200dp"
+        />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="360dp"
+        android:layout_marginLeft="210dp"
+        android:text="UserName"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:textAlignment="center"
+        />
+    <Button
+        android:id="@+id/signout"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="460dp"
+        android:layout_marginLeft="240dp"
+        android:background="@drawable/button"
+        android:text="Logout"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        />
+
+    <Button
+        android:id="@+id/subscribe"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="530dp"
+        android:layout_marginLeft="240dp"
+        android:background="@drawable/button"
+        android:text="Subscribe"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        />
+
+
+
+</RelativeLayout>
